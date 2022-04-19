@@ -1,28 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap";
 * {
     margin: 0;
     box-sizing: border-box;
 }
-
 h1{
     color: deeppink;
 }
-
 h2{
     font-family: "Roboto",SansSerif;
 }
-
 p{
     font-family: "Roboto",SansSerif;
 }
-
-
 body{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 .countries{
     border-width: 2px;
     border-color: red;
@@ -44,7 +38,6 @@ body{
     height: 5000px;
 
 }
-
 .printCountries{
     border-width: 2px;
     border-color: blue;
@@ -62,7 +55,6 @@ body{
     flex-basis: 50px;
 
 }
-
 .all-info{
     border-width: 2px;
     border-color: black;
@@ -78,7 +70,6 @@ body{
 
 
 }
-
 .countrie-id{
     border-width: 2px;
     border-color: brown;
@@ -91,15 +82,12 @@ body{
     align-items: center;
 
 }
-
 .printCountries img{
     border-width: 2px;
     border-color: yellow;
     border-style: solid;
 
 }
-
-
 .printCountries li{
     border-width: 2px;
     border-color: deeppink;
@@ -118,3 +106,5 @@ h1 {
 
 
 }
+
+/*# sourceMappingURL=index.be5cf2f4.css.map */
