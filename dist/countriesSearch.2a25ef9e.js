@@ -462,24 +462,31 @@ function hmrAcceptRun(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-async function fetchPeculiarCountriesData() {
-    let countriesData;
+async function fetchPeculiarCountryData() {
+    let countryData;
     try {
         const result = await _axiosDefault.default.get("https://restcountries.com/v2/name/peru");
-        countriesData = result.data.map((data)=>{
+        countryData = result.data.map((data)=>{
             return data;
         });
     } catch (e) {
         console.error(e);
     }
-    return countriesData;
+    return countryData;
 }
-function testData() {
-    fetchPeculiarCountriesData().then((data)=>{
-        console.log(data[0]);
+function injectInformationTextCountriesData() {
+    fetchPeculiarCountryData().then((data)=>{
+        const { flag , name: countryName , subregion , population , capital , currencies: { name: valutaName  }  } = data[0];
+        const element = document.getElementById("inject-country-information");
+        element.innerHTML = `
+                    <img src="${flag}" width="20" height="20">
+                    <h1>${countryName}</h1>
+                    <h2>${countryName} is situated in ${subregion}. It has a population of ${population} people.</h2>
+                    <h3>The capital is ${capital} and you can pay with ${valutaName}'s</h3>      
+                    `;
     });
 }
-testData();
+injectInformationTextCountriesData();
 
 },{"axios":"1IeuP","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"1IeuP":[function(require,module,exports) {
 module.exports = require('./lib/axios');

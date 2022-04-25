@@ -28,13 +28,13 @@ Voor je begint
         nog niet in de package.json.
 
 Randvoorwaarden
-    [] Op basis van de informatie uit de REST Countries API, haal je data op over één specifiek land per keer;
-    [] Kies één land om mee te beginnen. Zorg ervoor dat de opgehaalde data op de volgende manier wordt 
+    [v] Op basis van de informatie uit de REST Countries API, haal je data op over één specifiek land per keer;
+    [v] Kies één land om mee te beginnen. Zorg ervoor dat de opgehaalde data op de volgende manier wordt 
         weergegeven op de pagina:
-    [] [IMAGE: flag]
-    [] [country-name]
-    [] [country-naam] is situated in [subarea-name]. It has a population of [amount] people.
-    [] The capital is [city] and you can pay with [currency]'s
+        [v] [IMAGE: flag]
+        [v] [country-name]
+        [v] [country-naam] is situated in [subarea-name]. It has a population of [amount] people.
+        [v] The capital is [city] and you can pay with [currency]'s
     [] Houdt er rekening mee dat de meeste landen maar één valuta hebben, maar sommige landen (zoals Panama) 
         hebben er twee. 
         In dat geval moet er: and you can pay with [currency] and [currency]'s komen te staan;
