@@ -42,7 +42,7 @@ Randvoorwaarden
         getriggered 
         zodra de gebruiker op de 'zoek'-knop klikt of op ENTER drukt. De inhoud van het invoerveld wordt na 
         iedere zoekopdracht geleegd;
-    [] Wanneer de gebruiker zoekt naar een land dat niet bestaat, wordt er een foutmelding getoond. Wanneer de
+    [v] Wanneer de gebruiker zoekt naar een land dat niet bestaat, wordt er een foutmelding getoond. Wanneer de
         gebruiker daarna een 
         nieuwe zoekopdracht maakt die wel correct is, moet de foutmelding weer verdwenen zijn.
 
@@ -78,17 +78,17 @@ kun je onderstaand stappenplan gebruiken:
     [v] Zorg ervoor dat de waarde uit het inputveld wordt gebruikt als dynamische waarde in jouw GET-request;
     [v] Zorg ervoor dat de waarde van het input veld wordt leeggemaakt na elke zoekopdracht en dat er altijd 
         maar één zoekresultaat op de pagina staat;
-    [] Zorg ervoor dat als er naar een land wordt gezocht dat niet bestaat, er een foutmelding wordt getoond. 
+    [v] Zorg ervoor dat als er naar een land wordt gezocht dat niet bestaat, er een foutmelding wordt getoond. 
         Tip: als er een ongeldige API call wordt 
         gemaakt, zal de response in het catch blok terecht komen.
-    []Zorg er ook voor dat wanneer er daarna een geldig verzoek wordt gedaan, de foutmelding weer verdwenen is.
+    [v]Zorg er ook voor dat wanneer er daarna een geldig verzoek wordt gedaan, de foutmelding weer verdwenen is.
 
 Bonusopdrachten
-    [] Maak een functie die ongeacht het aantal talen die in een land gesproken worden, een string maakt. 
+    [v] Maak een functie die ongeacht het aantal talen die in een land gesproken worden, een string maakt. 
         Voeg deze string toe aan de 
         informatie die je per land op de pagina weergeeft:
-    [] 1 taal: They speak [language]
-    [] 2 talen: They speak [language] and [language]
-    [] 3 talen: They speak [language], [language] and [language]
-    [] etc.
+    [v] 1 taal: They speak [language]
+    [v] 2 talen: They speak [language] and [language]
+    [v] 3 talen: They speak [language], [language] and [language]
+    [v] etc.
     [] Make it look nice! 😍

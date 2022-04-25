@@ -16,6 +16,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
 }
 .countries{
     border-width: 2px;

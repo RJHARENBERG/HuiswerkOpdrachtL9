@@ -42,12 +42,25 @@ function injectInformationTextCountriesData() {
             valuta = `${valutaName}`
         }
 
+        let string = ""
+        const [first, second, third] = data[0].languages
+        if (data[0].languages.length === 3) {
+            string = `They speak ${first.nativeName}, ${second.nativeName} and ${third.nativeName}`
+        }
+        if (data[0].languages.length === 2) {
+            string = `They speak ${first.nativeName} and ${second.nativeName}`
+        }
+        if (data[0].languages.length === 1) {
+            string = `They speak ${first.nativeName}.`
+        }
+
         const element = document.getElementById("inject-country-information");
         element.innerHTML = `
                     <img src="${flag}" width="20" height="20">
                     <h1>${countryName}</h1>
                     <h2>${countryName} is situated in ${subregion}. It has a population of ${population} people.</h2>
                     <h3>The capital is ${capital} and you can pay with ${valuta}</h3>      
+                    <h3>${string}</h3>      
                     `
     });
 }
@@ -67,9 +80,9 @@ function handelCountryInput(e) {
 const countryNameInputField = document.getElementById("country-name")
 countryNameInputField.addEventListener("keyup", handelCountryInput)
 
-
 function handelSubmit(e) {
     e.preventDefault()
+
     fetchPeculiarCountryData();
     injectInformationTextCountriesData();
 }
