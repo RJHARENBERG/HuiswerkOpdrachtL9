@@ -35,7 +35,7 @@ Randvoorwaarden
         [v] [country-name]
         [v] [country-naam] is situated in [subarea-name]. It has a population of [amount] people.
         [v] The capital is [city] and you can pay with [currency]'s
-    [] Houdt er rekening mee dat de meeste landen maar één valuta hebben, maar sommige landen (zoals Panama) 
+    [v] Houdt er rekening mee dat de meeste landen maar één valuta hebben, maar sommige landen (zoals Panama) 
         hebben er twee. 
         In dat geval moet er: and you can pay with [currency] and [currency]'s komen te staan;
     [] Er staat een zoekbalk op de pagina waarmee de gebruiker naar een land kan zoeken. De zoekopdracht wordt 
