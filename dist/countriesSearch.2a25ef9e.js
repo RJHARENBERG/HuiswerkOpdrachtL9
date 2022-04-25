@@ -462,15 +462,21 @@ function hmrAcceptRun(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
+let countryName = "nederland";
 async function fetchPeculiarCountryData() {
     let countryData;
     try {
-        const result = await _axiosDefault.default.get("https://restcountries.com/v2/name/panama");
+        const result = await _axiosDefault.default.get(`https://restcountries.com/v2/name/${countryName}`);
         countryData = result.data.map((data)=>{
             return data;
         });
     } catch (e) {
-        console.error(e);
+        console.error(e.message);
+        console.log("massage" + e.message);
+        const element = document.getElementById("inject-country-information");
+        element.innerHTML = `
+                    <h1>Sorry maar dit land bestaat niet</h1>
+                    `;
     }
     return countryData;
 }
@@ -497,7 +503,24 @@ function injectInformationTextCountriesData() {
                     `;
     });
 }
-injectInformationTextCountriesData();
+function CountrySearchButtonClick() {
+}
+const countryInputButon = document.getElementById("search-button");
+countryInputButon.addEventListener("click", CountrySearchButtonClick);
+function handelCountryInput(e) {
+    const currentValue = e.target.value;
+    console.log(`${currentValue}`);
+    countryName = currentValue.toLowerCase();
+}
+const countryNameInputField = document.getElementById("country-name");
+countryNameInputField.addEventListener("keyup", handelCountryInput);
+function handelSubmit(e) {
+    e.preventDefault();
+    fetchPeculiarCountryData();
+    injectInformationTextCountriesData();
+}
+const countryInformationRequest = document.getElementById("country-information-request");
+countryInformationRequest.addEventListener('submit', handelSubmit);
 
 },{"axios":"1IeuP","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"1IeuP":[function(require,module,exports) {
 module.exports = require('./lib/axios');

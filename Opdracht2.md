@@ -38,7 +38,7 @@ Randvoorwaarden
     [v] Houdt er rekening mee dat de meeste landen maar één valuta hebben, maar sommige landen (zoals Panama) 
         hebben er twee. 
         In dat geval moet er: and you can pay with [currency] and [currency]'s komen te staan;
-    [] Er staat een zoekbalk op de pagina waarmee de gebruiker naar een land kan zoeken. De zoekopdracht wordt 
+    [v] Er staat een zoekbalk op de pagina waarmee de gebruiker naar een land kan zoeken. De zoekopdracht wordt 
         getriggered 
         zodra de gebruiker op de 'zoek'-knop klikt of op ENTER drukt. De inhoud van het invoerveld wordt na 
         iedere zoekopdracht geleegd;
@@ -52,31 +52,31 @@ Stappenplan
 
 kun je onderstaand stappenplan gebruiken:
 
-    [] Neem de documentatie van de REST Countries API goed door. Welk endpoint heb je nodig om informatie 
+    [v] Neem de documentatie van de REST Countries API goed door. Welk endpoint heb je nodig om informatie 
         over één specifiek land 
         op te halen, zoals nederland?
-    [] Schrijf een asynchrone functie die, met behulp van Axios, een GET-request maakt naar het juiste 
+    [v] Schrijf een asynchrone functie die, met behulp van Axios, een GET-request maakt naar het juiste 
         endpoint voor nederland. 
         Log de response in de console en bestudeer de data goed: hoe is het opgebouwd?
-    [] Probeer eens om de naam en populatie van het land te loggen in de console. Welk pad moet je hiervoor 
+    [v] Probeer eens om de naam en populatie van het land te loggen in de console. Welk pad moet je hiervoor 
         volgen?
-    [] Maak een <article>- of <div>-tag in de HTML die je als referentie kunt gebruiken in jouw JavaScript 
+    [v] Maak een <article>- of <div>-tag in de HTML die je als referentie kunt gebruiken in jouw JavaScript 
         bestand;
-    [] Zorg ervoor dat de naam van het land weergegeven wordt in bovenstaande tag;
-    [] Zorg er nu voor dat de zin [country-naam] is situated in [subarea-name]. It has a population of 
+    [v] Zorg ervoor dat de naam van het land weergegeven wordt in bovenstaande tag;
+    [v] Zorg er nu voor dat de zin [country-naam] is situated in [subarea-name]. It has a population of 
         [amount] people. daaronder wordt weergegeven;
-    [] Zorg ervoor dat er een afbeelding van een vlag naast de naam van het land komt te staan;
-    [] Schrijf een functie die, ongeacht of er één of twee valuta's gebruikt worden, eenn string teruggeeft. 
+    [v] Zorg ervoor dat er een afbeelding van een vlag naast de naam van het land komt te staan;
+    [v] Schrijf een functie die, ongeacht of er één of twee valuta's gebruikt worden, eenn string teruggeeft. 
         Tip: dit kun je checken door bijvoorbeeld de informatie over panama op te halen.
-    [] 1 valuta: and you can pay with [currency]'s
-    [] 2 valuta's: and you can pay with [currency]'s and [currency]'s
-    [] Gebruik deze functie de correcte zin, The capital is [city] and you can pay with [currency] and 
+    [v] 1 valuta: and you can pay with [currency]'s
+    [v] 2 valuta's: and you can pay with [currency]'s and [currency]'s
+    [v] Gebruik deze functie de correcte zin, The capital is [city] and you can pay with [currency] and 
         [currency]'s weer te geven.
-    [] Maak een inputveld met zoek-knop op de pagina. In plaats van dat de data wordt opgehaald wanneer 
+    [v] Maak een inputveld met zoek-knop op de pagina. In plaats van dat de data wordt opgehaald wanneer 
         de pagina laadt, zorg je er nu voor dat de 
         data over Nederland pas wordt opgehaald wanneer de gebruiker op ENTER of 'Zoek' drukt;
-    [] Zorg ervoor dat de waarde uit het inputveld wordt gebruikt als dynamische waarde in jouw GET-request;
-    [] Zorg ervoor dat de waarde van het input veld wordt leeggemaakt na elke zoekopdracht en dat er altijd 
+    [v] Zorg ervoor dat de waarde uit het inputveld wordt gebruikt als dynamische waarde in jouw GET-request;
+    [v] Zorg ervoor dat de waarde van het input veld wordt leeggemaakt na elke zoekopdracht en dat er altijd 
         maar één zoekresultaat op de pagina staat;
     [] Zorg ervoor dat als er naar een land wordt gezocht dat niet bestaat, er een foutmelding wordt getoond. 
         Tip: als er een ongeldige API call wordt 
