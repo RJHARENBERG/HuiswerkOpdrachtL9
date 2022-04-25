@@ -4,118 +4,22 @@
     box-sizing: border-box;
 }
 
-h1{
-    color: deeppink;
-}
-
-h2{
-    font-family: "Roboto",SansSerif;
-}
-
-p{
-    font-family: "Roboto",SansSerif;
-}
-
-
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
-.countries{
-    border-width: 2px;
-    border-color: red;
-    border-style: solid;
-
-
-    column-count: 3;
-
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-
-
-    margin: 100px;
-
-    height: 5000px;
-
-}
-
 .printCountries{
-    border-width: 2px;
-    border-color: blue;
-    border-style: solid;
-
+    list-style-type: none;
     column-count: 3;
-    width: 100%;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-
-    flex-basis: 50px;
 
 }
 
 .all-info{
-    border-width: 2px;
-    border-color: black;
-    border-style: solid;
-
-
-    order: 3;
-    flex-basis: 50px;
-
 
     display: flex;
     flex-direction: column;
 
-
+    width: 250px;
+    height: 100px;
 }
 
 .countrie-id{
-    border-width: 2px;
-    border-color: brown;
-    border-style: solid;
-
-    flex-shrink: 1;
-
     display: flex;
     flex-direction: row;
-    align-items: center;
-
-}
-
-.printCountries img{
-    border-width: 2px;
-    border-color: yellow;
-    border-style: solid;
-
-}
-
-
-.printCountries li{
-    border-width: 2px;
-    border-color: deeppink;
-    border-style: solid;
-
-
-    display: flex;
-
-}
-h1 {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    align-items: stretch;
-
-
 }

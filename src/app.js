@@ -34,15 +34,15 @@ function printCountrieData() {
 
             element.innerHTML = data.map((data) => {
                 return `
-                <div class="all-info">
+                <li class="all-info">
                     <div class="countrie-id">
                         <img src="${data.flag}" alt="" width="50px" height="40px">                       
                         <h2 style="color: ${regionColor(data.region)}">${data.name}</h2>                                                   
                     </div>  
                     <p>Has a population of ${data.population} people</p>   
-                </div>                
+                </li>                
                     `
-            })
+            }).join("")
         }
     )
 }

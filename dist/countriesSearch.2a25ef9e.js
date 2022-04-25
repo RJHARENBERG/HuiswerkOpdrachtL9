@@ -501,12 +501,18 @@ function injectInformationTextCountriesData() {
         if (data[0].languages.length === 1) string = `They speak ${first.nativeName}.`;
         const element = document.getElementById("inject-country-information");
         element.innerHTML = `
-                    <img src="${flag}" width="20" height="20">
+        <div class="info-box">
+                <div class="flag-en-land">
+                    <img src="${flag}" width="70" height="50">
                     <h1>${countryName}</h1>
+                </div>
+                <div class="text-Land">
                     <h2>${countryName} is situated in ${subregion}. It has a population of ${population} people.</h2>
-                    <h3>The capital is ${capital} and you can pay with ${valuta}</h3>      
-                    <h3>${string}</h3>      
-                    `;
+                    <h2>The capital is ${capital} and you can pay with ${valuta}.</h2>      
+                    <h2>${string}.</h2>    
+                </div>
+</div>
+                                `;
     });
 }
 function CountrySearchButtonClick() {
@@ -524,6 +530,7 @@ function handelSubmit(e) {
     e.preventDefault();
     fetchPeculiarCountryData();
     injectInformationTextCountriesData();
+    countryInformationRequest.reset();
 }
 const countryInformationRequest = document.getElementById("country-information-request");
 countryInformationRequest.addEventListener('submit', handelSubmit);
