@@ -459,6 +459,7 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"j9q7g":[function(require,module,exports) {
+console.log("test");
 
 },{}]},["8meWU","j9q7g"], "j9q7g", "parcelRequirecb08")
 

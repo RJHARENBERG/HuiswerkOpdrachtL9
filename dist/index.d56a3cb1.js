@@ -530,38 +530,7 @@ function regionColor(regionName) {
 function sortData(data) {
     data.sort((b, a)=>b.population - a.population
     );
-} //6 & 7.
- // function printCountrieData() {
- //
- //     fetchCountriesData().then((data) => {
- //             data.sort((b, a) => b.population - a.population);
- //             for (let i = 0; i < data.length; i++) {
- //
- //                 for (let i = 0; i < data.length; i++) {
- //                     const nameElement = document.createElement("li");
- //                     const nameStringInput = document.createTextNode(data[i].name);
- //                     nameElement.setAttribute("style", "color:" + regionColor(data[i].region))
- //                     nameElement.appendChild(nameStringInput);
- //
- //                     const peopleStringElement = document.createElement("li");
- //                     const peopleStringInput = document.createTextNode("Has a population of " + data[i].population + " people");
- //                     peopleStringElement.appendChild(peopleStringInput);
- //
- //                     const flage = document.createElement("IMG");
- //                     flage.setAttribute("src", data[i].flag);
- //                     flage.setAttribute("width", "30")
- //                     flage.setAttribute("height", "30")
- //
- //                     document.getElementById("printCountries").appendChild(flage)
- //                     document.getElementById("printCountries").appendChild(nameElement);
- //                     document.getElementById("printCountries").appendChild(peopleStringElement);
- //
- //
- //                 }
- //             }
- //         }
- //     )
- // }
+}
 
 },{"axios":"1IeuP","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"1IeuP":[function(require,module,exports) {
 module.exports = require('./lib/axios');
