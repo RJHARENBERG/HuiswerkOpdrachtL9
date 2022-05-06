@@ -73,8 +73,8 @@
 
           Bonusopdrachten
 
-          [] Lees paragraaf 8.2 op EdHub door en kijk hoe je dit kunt toepassen in deze opdracht;
-          [] Make it look nice! 😍
+          [v] Lees paragraaf 8.2 op EdHub door en kijk hoe je dit kunt toepassen in deze opdracht;
+          [v] Make it look nice! 😍
       */
 2. //6 & 7.
    // function printCountrieData() {
